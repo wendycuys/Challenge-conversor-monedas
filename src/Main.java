@@ -12,9 +12,8 @@ public class Main {
             mostrarMenu();
             int opcion = scanner.nextInt();
 
-            double cantidad = 0;  // Declaramos la variable cantidad aquí
+            double cantidad = 0;
 
-            // Pedir la cantidad después de que el usuario haya elegido una opción
             if (opcion >= 1 && opcion <= 6) {
                 System.out.println("Ingrese la cantidad que desea convertir:");
                 cantidad = scanner.nextDouble();
@@ -22,13 +21,13 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    convertir(currencyConverter, "USD", "ARS", cantidad); // Peso colombiano a dólar
+                    convertir(currencyConverter, "USD", "ARS", cantidad);
                     break;
                 case 2:
-                    convertir(currencyConverter, "ARS", "USD", cantidad); // Real brasileño a peso argentino
+                    convertir(currencyConverter, "ARS", "USD", cantidad);
                     break;
                 case 3:
-                    convertir(currencyConverter, "USD", "BRL", cantidad); // Dólar a peso colombiano
+                    convertir(currencyConverter, "USD", "BRL", cantidad);
                     break;
                 case 4:
                     convertir(currencyConverter, "BRL", "USD", cantidad);
